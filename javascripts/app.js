@@ -87,6 +87,9 @@ jQuery(document).ready(function ($) {
     })
   }
 
+  $('#progress').githubInfoWidget( 
+  	{ user: 'alexanderbeletsky', repo: 'foundstyles', branch: 'master', last: 3, limitMessageTo: 45, avatarSize: 16 });
+
 
 	/* DISABLED BUTTONS ------------- */
 	/* Gives elements with a class of 'disabled' a return: false; */

@@ -12,3 +12,69 @@
 {
 	text-align: center;
 }
+
+.install:before 
+{
+   content:"";
+   position:absolute;
+   z-index:-1;
+   top:0;
+   bottom:0;
+   left:0;
+   right:0;
+   background:url('../images/glyphicons_009_magic.png') 0 0 no-repeat;;
+   opacity:0.65;
+}
+
+.install
+{
+	padding-left: 38px;
+}
+
+.open-source:before
+{
+   content:"";
+   position:absolute;
+   z-index:-1;
+   top:0;
+   bottom:0;
+   left:0;
+   right:0;
+   background: url('../images/glyphicons_341_github.png') 0 0 no-repeat;
+   opacity:0.65;
+}
+
+.open-source
+{
+	padding-left: 38px;	
+}
+
+.responsive:before
+{
+   content:"";
+   position:absolute;
+   z-index:-1;
+   top:0;
+   bottom:0;
+   left:0;
+   right:0;
+   background: url('../images/glyphicons_162_ipad.png') 0 0 no-repeat;
+   opacity:0.65;	
+}
+
+.responsive
+{
+	padding-left: 38px;	
+}
+
+#progress ul li
+{
+	margin: 0;
+	vertical-align: center;
+}
+
+.github-commits-widget-by
+{
+	float: right;
+	font-size: 70%;
+}

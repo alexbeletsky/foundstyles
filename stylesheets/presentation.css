@@ -1,4 +1,4 @@
-/* Font-Face */
+/* Font-Face 
 @font-face {
 font-family: 'Proxima';
 	src: url(fonts/proximanova-regular-webfont.eot?1307578394);
@@ -48,7 +48,7 @@ font-family: 'Proxima';
 	src: url(fonts/proximanova-extrabold-webfont.eot?1307578394);
 	src: url('fonts/proximanova-extrabold-webfont.eot?iefix') format('eot'),url(fonts/proximanova-extrabold-webfont.woff?1307578394) format('woff'),url(fonts/proximanova-extrabold-webfont.ttf?1307578394) format('truetype'),url('fonts/proximanova-extrabold-webfont.svg#webfont2rpW2ohz') format('svg')
 }
-
+*/
 
 
 
