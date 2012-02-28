@@ -78,3 +78,32 @@
 	float: right;
 	font-size: 70%;
 }
+
+#gallery
+{
+	margin-bottom: 50px;
+}
+
+.style
+{
+	display: block;
+	height: 300px;
+	padding: 4px;
+	background-color: #E3E3E3;
+	border: 1px solid #DDD;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.style img
+{
+	width: 290px;
+	height: 200px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}

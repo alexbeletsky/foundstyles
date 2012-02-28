@@ -50,10 +50,6 @@ font-family: 'Proxima';
 }
 */
 
-
-
-
-
 h1, h2, h3, h4, h5, h6 {
   font-family: "Proxima", "Helvetica Neue", "Helvetica", Arial, sans-serif;
   font-weight: normal; }
@@ -131,7 +127,7 @@ a:hover {
 #gridBg .row .columns {
   border-left: dashed 1px #e1e1e1;
   border-right: dashed 1px #e1e1e1;
-  height: 445px;
+  height: 645px;
   width: 4.085%; }
 
 #gridBgShort {
@@ -165,7 +161,7 @@ header {
   position: relative;
   z-index: 30;
   /*top: -645px;*/
-  margin-top: -405px; }
+  margin-top: -605px; }
 header h1 {
   font-weight: 300;
   font-size: 76px;
@@ -223,17 +219,7 @@ header img {
   background-image: linear-gradient(top, #ededed, #ffffff 70%, #ffffff);
   padding-top: 75px;
   overflow: hidden; }
-#main:before {
-  content: "";
-  display: block;
-  background: url('images/device-shadow.png?1309576043') 0 0 no-repeat;
-  width: 1034px;
-  height: 140px;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  margin-left: -517px; }
-  
+
 #caseStudies h4 {
   color: #7b7b7b;
 }
