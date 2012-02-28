@@ -1,6 +1,16 @@
+#header
+{
+	padding: 50px 0px;
+}
+
 .social
 {
 	margin-bottom: 25px;
+}
+
+.color
+{
+	color: #00a5ff;	
 }
 
 #valueProps h4

@@ -161,7 +161,7 @@ header {
   position: relative;
   z-index: 30;
   /*top: -645px;*/
-  margin-top: -605px; }
+  /*margin-top: -605px;*/ }
 header h1 {
   font-weight: 300;
   font-size: 76px;
@@ -211,7 +211,7 @@ header img {
 #main {
   position: relative;
   margin-top: 0;
-  top: -95px;
+  /*top: -95px;*/
   z-index: 1;
   background-color: #ededed;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ededed), color-stop(70%, #ffffff), color-stop(100%, #ffffff));
@@ -426,7 +426,7 @@ div.timer {
 footer.row {
   margin-top: 80px;
   border-top: solid 1px #e6e6e6;
-  padding-top: 20px; }
+  padding: 40px 0px; }
 footer.row h6 {
   color: #6f6f6f;
   font-size: 14px;
