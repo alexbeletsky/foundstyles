@@ -1,22 +1,52 @@
 // COLORS
 
-@greyColor: 				#eee;
-@darkGreyColor:				darken(@greyColor, 80%);
-@blackColor:				#1a1a1a;
-@whiteColor:				#d6d6d6;
+@blue:                  #2f84c2;
+@green:                 #2e8f34;
+@red:                   #cf0000;
+@yellow:                #f7b42c;
+@orange:                #dd5600;
+@pink:                  #f49ac1;
+@purple:                #9760b3;
+@white: 				#ededed;
+@grey:					#eeeeee;
+@darkGrey:				#8f8f8f;
+@black:					#141414;
 
+// BUTTONS
 
-@linkColor:					#006cd1;
-@topNavBackgroundColor: 	#1a1a1a;
-@topNavBorderColor:			#8f8f8f;
+@whiteButton:				darken(@white, 10%);
+@blueButton:				@blue;
+@redButton:					@red;
+@greenButton:				@green;
+@blackButton:				@black;
 
 // TYPOGRAPHY
 
-// Typography
-@baseFontSize:          	13px;
-@baseLineHeight:        	16px;
-@textColor:             	@darkGreyColor;
-@logoFontSize:				1.3em;
+@baseFontSize:          	14px;
+@baseLineHeight:        	18px;
+@textColor:             	darken(@backgroundColor, 80%);
+@lightTextColor:			lighten(@textColor, 40%);
 @parFontSize:				@baseFontSize;
 
+// ELEMENTS
 
+@backgroundColor: 			@grey;
+@navBarLinkColor:			@white;
+@navBarSpanColor:			@white;
+@linkColor:					@blue;
+@linkHoverColor:			darken(@linkColor, 5%);
+
+@topNavLinkColor:			@white;
+@topNavBackgroundColor: 	@black;
+@topNavBorderColor:			darken(@grey, 30%);
+
+@logoColor:					@white;
+
+@panelGradientStart:		darken(@white, 3%);
+@panelGradientFinish:		darken(@white, 6%);
+
+@subNavBackgroundColor:		@blue;
+
+@paginationColor:			@lightTextColor;
+@paginationBorderColor:		@blue;
+@paginationFocusColor:		@black;
