@@ -1,31 +1,44 @@
 /* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:700);
 
-@import url(http://fonts.googleapis.com/css?family=Ruda:400);
+@import url(http://fonts.googleapis.com/css?family=Lustria:400);
 body {
   background: #eeeeee;
-  font-family: "Ruda", "Helvetica Neue", "HelveticaNeue", Helvetica, sans-serif;
+  font-family: "Lustria", "Helvetica Neue", "HelveticaNeue", Helvetica, sans-serif;
   font-size: 13px;
   line-height: 16px;
   color: #222222;
 }
+a {
+  color: #006cd1;
+}
+header {
+  padding: 3em 0px 3em 0px;
+}
+nav a {
+  margin-right: 0.5em;
+  color: #d6d6d6;
+}
+nav a:hover {
+  color: #d6d6d6;
+}
 h1 {
-  font-size: 36px;
+  font-size: 3em;
 }
 h2 {
-  font-size: 32.4px;
+  font-size: 2.5em;
 }
 h3 {
-  font-size: 25.2px;
+  font-size: 2em;
 }
 h4 {
-  font-size: 23.400000000000002px;
+  font-size: 1.4em;
 }
 h5 {
-  font-size: 18px;
+  font-size: 1.2em;
 }
 h6 {
-  font-size: 16.2px;
+  font-size: 1.1em;
 }
 h1,
 h2,
@@ -40,15 +53,42 @@ h6,
 }
 p {
   font-size: 13px;
+  line-height: 19px;
+}
+.bottom-border {
+  border-bottom: 4px solid #8f8f8f;
 }
 .top-nav {
   background: #1a1a1a;
-  border-bottom: 4px solid #8f8f8f;
-  height: 2.3em;
-  line-height: 2.3em;
+  height: 2.5em;
+  line-height: 2.5em;
 }
 a.logo {
-  color: #dbdbdb;
+  color: #d6d6d6;
   font-size: 1.3em;
   padding-top: 5px;
+}
+.nav-bar {
+  background-color: #1a1a1a;
+  border-color: #222222;
+}
+.nav-bar > li > a {
+  color: #d6d6d6;
+}
+.nav-bar > li.has-flyout > a.flyout-toggle span {
+  border-top: 4px solid #d6d6d6;
+}
+.post {
+  display: block;
+  margin-bottom: 1.7em;
+}
+.post-header {
+  margin-bottom: 1em;
+}
+.post-header h6 {
+  font-style: italic;
+  color: #888888;
+}
+.comments {
+  float: right;
 }

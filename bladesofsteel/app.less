@@ -1,46 +1,72 @@
 //simpless:!minify
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:700);
-@import url(http://fonts.googleapis.com/css?family=Ruda:400);
+@import url(http://fonts.googleapis.com/css?family=Lustria:400);
 
 @import 'variables.less';
+
+// COMMON
+
 
 body 
 {
 	background: @greyColor;
-	font-family: "Ruda", "Helvetica Neue", "HelveticaNeue", Helvetica, sans-serif;
+	font-family: "Lustria", "Helvetica Neue", "HelveticaNeue", Helvetica, sans-serif;
 	font-size: @baseFontSize;
 	line-height: @baseLineHeight;
 	color: @textColor;
 }
 
+a
+{
+	color: @linkColor;
+}
+
+header
+{
+	padding: 3em 0px 3em 0px;
+}
+
+nav a
+{
+	margin-right: 0.5em;
+	color: @whiteColor;
+}
+
+nav a:hover
+{
+	color: @whiteColor;
+}
+
+// TYPOGRAPHY
+
 h1
 {
-	font-size: @headingFontSize;
+	font-size: 3em;
 }
 
 h2
 {
-	font-size: @headingFontSize * 0.9;
+	font-size: 2.5em;
 }
 
 h3
 {
-	font-size: @headingFontSize * 0.7;
+	font-size: 2em;
 }
 
 h4
 {
-	font-size: @headingFontSize * 0.65;
+	font-size: 1.4em;
 }
 
 h5
 {
-	font-size: @headingFontSize * 0.5;
+	font-size: 1.2em;
 }
 
 h6
 {
-	font-size: @headingFontSize * 0.45;
+	font-size: 1.1em;
 }
 
 h1, h2, h3, h4, h5, h6, .top-nav, .nav-bar, .sub-nav
@@ -51,14 +77,21 @@ h1, h2, h3, h4, h5, h6, .top-nav, .nav-bar, .sub-nav
 p
 {
 	font-size: @baseFontSize;
+	line-height: @baseLineHeight + 3;
+}
+
+// UI
+
+.bottom-border
+{
+	border-bottom: 4px solid @topNavBorderColor;
 }
 
 .top-nav
 {
 	background: @topNavBackgroundColor;
-	border-bottom: 4px solid @topNavBorderColor;
-	height: 2.3em;
-	line-height: 2.3em;
+	height: 2.5em;
+	line-height: 2.5em;
 }
 
 a.logo 
@@ -68,4 +101,42 @@ a.logo
 	padding-top: 5px;
 }
 
+.nav-bar
+{
+	background-color: @topNavBackgroundColor;
+	border-color: @darkGreyColor;
+}
 
+.nav-bar > li > a
+{
+	color: @whiteColor;
+}
+
+.nav-bar > li.has-flyout > a.flyout-toggle span 
+{
+	border-top: 4px solid @whiteColor;
+}
+
+// BLOG
+
+.post
+{
+	display: block;
+	margin-bottom: 1.7em;
+}
+
+.post-header
+{
+	margin-bottom: 1em;
+}
+
+.post-header h6
+{
+	font-style: italic;
+	color: lighten(@textColor, 40%);
+}
+
+.comments
+{
+	float: right;
+}
