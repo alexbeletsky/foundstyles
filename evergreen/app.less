@@ -256,8 +256,9 @@ table tbody tr td { color: @tableTrTdColor; padding: 9px 10px; vertical-align: t
 	margin-bottom: 1em;
 }
 
-.post-header h6
+.post-header p.date
 {
+	font-size: 0.85em;
 	font-style: italic;
 	color: @lightTextColor;
 }
@@ -274,9 +275,26 @@ table tbody tr td { color: @tableTrTdColor; padding: 9px 10px; vertical-align: t
 
 // FOOTER
 
-footer.row 
+.footer
 {
-  margin-top: 7em;
-  border-top: solid 1px #DDD;
-  padding: 4em 0px; 
+	margin-top: 4em;
+	padding: 3em 0px; 
+
+	background-color: @footerBackground;
+  	border-top: solid 1px @footerBorderColor;
 }
+
+footer p
+{
+	color: @footerColor;
+}
+
+footer a
+{
+	color: @footerLinkColor;
+}
+
+footer a:hover
+{
+	color: @footerLinkColor;
+}	

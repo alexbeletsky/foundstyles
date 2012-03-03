@@ -325,9 +325,10 @@ table tbody tr td {
 .post-header {
   margin-bottom: 1em;
 }
-.post-header h6 {
+.post-header p.date {
+  font-size: 0.85em;
   font-style: italic;
-  color: #bca148;
+  color: #615323;
 }
 .comments {
   float: right;
@@ -335,8 +336,18 @@ table tbody tr td {
 .comments a {
   text-decoration: underline;
 }
-footer.row {
-  margin-top: 7em;
-  border-top: solid 1px #DDD;
-  padding: 4em 0px;
+.footer {
+  margin-top: 4em;
+  padding: 3em 0px;
+  background-color: #344a07;
+  border-top: solid 1px #29230f;
+}
+footer p {
+  color: #fafafa;
+}
+footer a {
+  color: #ffd454;
+}
+footer a:hover {
+  color: #ffd454;
 }
