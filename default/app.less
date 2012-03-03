@@ -184,6 +184,16 @@ div.alert-box { display: block; background-color: @whiteButton; padding: 6px 7px
 .white.label			{ background-color: @whiteButton; color: #333; }
 .black.label			{ background-color: @blackButton; }
 
+// :: BreadCrumbs;
+
+ul.breadcrumbs { display: block; background: @breadBackground; padding: 7px 10px; border: 1px solid ; border-radius: 2px; overflow: hidden; }
+ul.breadcrumbs li:first-child a, ul.breadcrumbs li:first-child span { padding-left: 0; }
+ul.breadcrumbs li:before { content: "/"; color: @breadSeparatorColor; }
+ul.breadcrumbs li.current a { cursor: default; color: @breadCurrentColor; }
+ul.breadcrumbs li.unavailable a { color: @breadUnavailableColor; }
+ul.breadcrumbs li.unavailable:hover a, ul.pagination li.unavailable a:focus { text-decoration: none; color: @breadUnavailableFocusColor; cursor: default; }
+
+
 // BLOG
 
 .post

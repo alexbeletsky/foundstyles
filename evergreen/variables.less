@@ -7,13 +7,15 @@
 @orange:                	#dd5600;
 @pink:                  	#f49ac1;
 @purple:                	#9760b3;
-@white: 					#ededed;
+@white: 					#f2f2f2;
 @grey:						#eeeeee;
 @darkGrey:					#8f8f8f;
 @black:						#141414;
 @brown:						#29230f;
-@darkGreen:					#2d4205;
+
+@darkGreen:					#344a07; // #2d4205;
 @lightGreen:				lighten(@green, 40%);
+@darkBlue:					#233170;
 
 // BUTTONS
 
@@ -43,14 +45,14 @@
 @linkColor:					@white;
 @linkHoverColor:			darken(@linkColor, 5%);
 
-@topNavLinkColor:			none;
+@topNavLinkColor:			@white;
 @topNavBackgroundColor: 	@darkGreen;
 @topNavBorderColor:			@brown;
 
 @logoColor:					@yellow;
 
 @panelGradientStart:		darken(@green, 6%);
-@panelGradientFinish:		darken(@green, 8%);
+@panelGradientFinish:		darken(@green, 10%);
 
 @subNavBackgroundColor:		@darkGreen;
 @subNavDtColor:				@darkGreen;
@@ -61,3 +63,10 @@
 @paginationFocusColor:		darken(@textColor, 5%);
 
 @abbrBorderColor:			@white;
+
+@breadBackground:				darken(@green, 10%);
+@breadBorder:					darken(@breadBackground, 10%);
+@breadSeparatorColor:			@breadBorder;
+@breadCurrentColor:				@lightGreen;
+@breadUnavailableColor:			@breadBorder;
+@breadUnavailableFocusColor:	#999;
