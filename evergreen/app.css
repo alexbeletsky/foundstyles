@@ -91,9 +91,9 @@ a.logo:hover {
 }
 div.panel {
   background: #efefef;
-  background: -moz-linear-gradient(top, #72ab43 0%, #6ba03f 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #72ab43), color-stop(100%, #6ba03f));
-  background: -o-linear-gradient(top, #72ab43 0%, #6ba03f 100%);
+  background: -moz-linear-gradient(top, #6da441 0%, #689c3e 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6da441), color-stop(100%, #689c3e));
+  background: -o-linear-gradient(top, #6da441 0%, #689c3e 100%);
 }
 .blue.button {
   background-color: #00a6fc;
@@ -145,7 +145,7 @@ div.panel {
 }
 dl.sub-nav dd.active a {
   background: #2d4205;
-  color: #fff;
+  color: #ffd454;
   padding: 3px 9px;
 }
 dl.sub-nav dt {
@@ -154,11 +154,11 @@ dl.sub-nav dt {
 ul.pagination li a {
   display: block;
   padding: 6px 7px 4px;
-  color: #bca148;
+  color: #2d4205;
 }
 ul.pagination li.current a, ul.pagination li:hover a, ul.pagination li a:focus {
-  border-bottom: solid 2px #2a85e8;
-  color: #141414;
+  border-bottom: solid 2px #ffd454;
+  color: #161308;
 }
 ul.pagination li.unavailable a {
   cursor: default;
@@ -260,6 +260,9 @@ div.alert-box {
 }
 .comments {
   float: right;
+}
+.comments a {
+  text-decoration: underline;
 }
 footer.row {
   margin-top: 7em;

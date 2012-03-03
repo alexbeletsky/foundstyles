@@ -169,11 +169,10 @@ div.panel
 .nice.green.button		{ border: 1px solid darken(@greenButton, 10%); }
 
 // :: Sub Nav;
-
 dl.sub-nav dd.active a 
 {
     background: @subNavBackgroundColor;
-    color: #fff;
+    color: @subNavColor;
     padding: 3px 9px;
 }
 
@@ -239,6 +238,11 @@ div.alert-box { display: block; background-color: @whiteButton; padding: 6px 7px
 .comments
 {
 	float: right;
+}
+
+.comments a
+{
+	text-decoration: underline;
 }
 
 // FOOTER
