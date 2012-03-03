@@ -217,7 +217,25 @@ ul.breadcrumbs li:first-child a, ul.breadcrumbs li:first-child span { padding-le
 ul.breadcrumbs li:before { content: "/"; color: @breadSeparatorColor; }
 ul.breadcrumbs li.current a { cursor: default; color: @breadCurrentColor; }
 ul.breadcrumbs li.unavailable a { color: @breadUnavailableColor; }
-ul.breadcrumbs li.unavailable:hover a, ul.pagination li.unavailable a:focus { text-decoration: none; color: @breadUnavailableFocusColor; cursor: default; }
+ul.breadcrumbs li.unavailable:hover a, ul.pagination li.unavailable a:focus { text-decoration: none; color: @breadUnavailableFocusColor; cursor: default; }// :: Tables;
+
+table { background: @tableBackground; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; margin: 0 0 18px; border: 1px solid @tableBorder;  }
+
+table thead, table tfoot { background: @tableHeaderFooterBackground; }
+table thead tr th,
+table tfoot tr th,
+table tbody tr td,
+table tr td,
+table tfoot tr td { font-size: 12px; line-height: 18px; text-align: left; }
+table thead tr th,
+table tfoot tr td { padding: 8px 10px 9px; font-size: 14px; font-weight: bold; color: @tableFooterHeaderTrTdColor; }
+
+table thead tr th:first-child, table tfoot tr td:first-child { border-left: none; }
+table thead tr th:last-child, table tfoot tr td:last-child { border-right: none; }
+table tbody tr.even,
+table tbody tr.alt { background: @tableAltColor; }
+table tbody tr:nth-child(even) { background: @tableAltColor; }
+table tbody tr td { color: @tableTrTdColor; padding: 9px 10px; vertical-align: top; border: none; }
 
 // BLOG
 

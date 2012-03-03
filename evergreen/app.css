@@ -270,6 +270,50 @@ ul.breadcrumbs li.unavailable:hover a, ul.pagination li.unavailable a:focus {
   color: #999999;
   cursor: default;
 }
+table {
+  background: #bfdca6;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  margin: 0 0 18px;
+  border: 1px solid #4b712c;
+}
+table thead, table tfoot {
+  background: #63953b;
+}
+table thead tr th,
+table tfoot tr th,
+table tbody tr td,
+table tr td,
+table tfoot tr td {
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left;
+}
+table thead tr th, table tfoot tr td {
+  padding: 8px 10px 9px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #29230f;
+}
+table thead tr th:first-child, table tfoot tr td:first-child {
+  border-left: none;
+}
+table thead tr th:last-child, table tfoot tr td:last-child {
+  border-right: none;
+}
+table tbody tr.even, table tbody tr.alt {
+  background: #e6f2dd;
+}
+table tbody tr:nth-child(even) {
+  background: #e6f2dd;
+}
+table tbody tr td {
+  color: #29230f;
+  padding: 9px 10px;
+  vertical-align: top;
+  border: none;
+}
 .post {
   display: block;
   margin-bottom: 1.7em;

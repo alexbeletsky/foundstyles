@@ -64,9 +64,19 @@
 
 @abbrBorderColor:			@white;
 
-@breadBackground:				darken(@green, 10%);
-@breadBorder:					darken(@breadBackground, 10%);
+@bordersColor:				darken(@breadBackground, 10%);	
+@elementsBackground:		darken(@green, 10%);
+
+@breadBackground:				@elementsBackground;
+@breadBorder:					@bordersColor;
 @breadSeparatorColor:			@breadBorder;
 @breadCurrentColor:				@lightGreen;
-@breadUnavailableColor:			@breadBorder;
+@breadUnavailableColor:			@bordersColor;
 @breadUnavailableFocusColor:	#999;
+
+@tableBackground:				lighten(@backgroundColor, 25%);
+@tableBorder:					@bordersColor;
+@tableHeaderFooterBackground:	@elementsBackground;
+@tableAltColor:					lighten(@backgroundColor, 40%);
+@tableFooterHeaderTrTdColor:	@textColor;
+@tableTrTdColor:				@textColor;
