@@ -1,15 +1,16 @@
 /* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
+@import url(http://fonts.googleapis.com/css?family=Signika+Negative:600);
 body {
-  background: #ffffff;
+  background: #7cb84b;
   font-size: 14px;
   line-height: 18px;
-  color: #333333;
+  color: #29230f;
 }
 a {
-  color: #2a85e8;
+  color: #d9eacb;
 }
 a:hover {
-  color: #1878e0;
+  color: #cce3b9;
 }
 header {
   padding: 3em 0px 3em 0px;
@@ -48,7 +49,11 @@ h6,
 .top-nav,
 .nav-bar,
 .sub-nav {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Signika Negative', sans-serif;
+  color: #2d4205;
+}
+hr {
+  border-top: 1px solid #70a742;
 }
 .bottom-border {
   border-bottom: 4px solid none;
@@ -137,7 +142,7 @@ dl.sub-nav dd.active a {
 ul.pagination li a {
   display: block;
   padding: 6px 7px 4px;
-  color: #999999;
+  color: #bca148;
 }
 ul.pagination li.current a, ul.pagination li:hover a, ul.pagination li a:focus {
   border-bottom: solid 2px #2a85e8;
@@ -239,7 +244,7 @@ div.alert-box {
 }
 .post-header h6 {
   font-style: italic;
-  color: #999999;
+  color: #bca148;
 }
 .comments {
   float: right;

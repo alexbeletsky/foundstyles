@@ -1,7 +1,7 @@
 // COLORS
 
 @blue:                  	#2a85e8;
-@green:                 	#2e8f34;
+@green:                 	#7cb84b;
 @red:                   	#cf0000;
 @yellow:                	#f7b42c;
 @orange:                	#dd5600;
@@ -11,6 +11,9 @@
 @grey:						#eeeeee;
 @darkGrey:					#8f8f8f;
 @black:						#141414;
+@brown:						#29230f;
+@darkGreen:					#2d4205;
+@lightGreen:				lighten(@green, 35%);
 
 // BUTTONS
 
@@ -20,20 +23,12 @@
 @greenButton:				#5b8737;
 @blackButton:				#141414;
 
-// TYPOGRAPHY
-
-@baseFontSize:          	14px;
-@baseLineHeight:        	18px;
-@textColor:             	darken(@backgroundColor, 80%);
-@lightTextColor:			lighten(@textColor, 40%);
-@parFontSize:				@baseFontSize;
-
 // ELEMENTS
 
-@backgroundColor: 			@white;
+@backgroundColor: 			@green;
 @navBarLinkColor:			none;
 @navBarSpanColor:			none;
-@linkColor:					@blue;
+@linkColor:					@lightGreen;
 @linkHoverColor:			darken(@linkColor, 5%);
 
 @topNavLinkColor:			none;
@@ -50,3 +45,13 @@
 @paginationColor:			@lightTextColor;
 @paginationBorderColor:		@blue;
 @paginationFocusColor:		@black;
+
+// TYPOGRAPHY
+
+@baseFontSize:          	14px;
+@baseLineHeight:        	18px;
+@textColor:             	@brown;
+@headingColor:				@darkGreen;
+@hrColor:					darken(@backgroundColor, 5%);
+@lightTextColor:			lighten(@textColor, 40%);
+@parFontSize:				@baseFontSize;
