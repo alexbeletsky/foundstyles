@@ -10,23 +10,23 @@ body {
   color: #29230f;
 }
 a {
-  color: #f2f2f2;
+  color: #fafafa;
 }
 a:hover {
-  color: #e5e5e5;
+  color: #ededed;
 }
 header {
   padding: 3em 0px 3em 0px;
 }
 nav a {
   margin-right: 0.5em;
-  color: #f2f2f2;
+  color: #fafafa;
 }
 nav a:hover {
-  color: #f2f2f2;
+  color: #fafafa;
 }
 abbr, acronym {
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid #fafafa;
 }
 h1 {
   font-size: 3em;
@@ -84,7 +84,7 @@ a.logo:hover {
   border-right: 1px solid #29230f;
 }
 .nav-bar > li > a {
-  color: #f2f2f2;
+  color: #fafafa;
 }
 .nav-bar > li.has-flyout > a.flyout-toggle span {
   border-top: 4px solid #e6f2dd;
@@ -96,52 +96,52 @@ div.panel {
   background: -o-linear-gradient(top, #6da441 0%, #63953b 100%);
 }
 .blue.button {
-  background-color: #00a6fc;
+  background-color: #3e93bd;
 }
 .red.button {
-  background-color: #e91c21;
+  background-color: #c21919;
 }
 .white.button {
-  background-color: #e9e9e9;
+  background-color: #c9c9c9;
   color: #333;
 }
 .black.button {
   background-color: #141414;
 }
 .green.button {
-  background-color: #5b8737;
+  background-color: #478026;
 }
 .blue.button:hover, .blue.button:focus {
-  background-color: #0084c9;
+  background-color: #317597;
 }
 .red.button:hover, .red.button:focus {
-  background-color: #bf1317;
+  background-color: #951313;
 }
 .white.button:hover, .white.button:focus {
-  background-color: #d0d0d0;
+  background-color: #b0b0b0;
   color: #333;
 }
 .black.button:hover, .black.button:focus {
   background-color: #000000;
 }
 .green.button:hover, .green.button:focus {
-  background-color: #436328;
+  background-color: #31591a;
 }
 .nice.blue.button {
-  border: 1px solid #0095e3;
+  border: 1px solid #317597;
 }
 .nice.red.button {
-  border: 1px solid #d7151a;
+  border: 1px solid #951313;
 }
 .nice.white.button {
-  border: 1px solid #dcdcdc;
+  border: 1px solid #969696;
   text-shadow: none !important;
 }
 .nice.black.button {
   border: 1px solid #000000;
 }
 .nice.green.button {
-  border: 1px solid #436328;
+  border: 1px solid #31591a;
 }
 dl.sub-nav dd.active a {
   background: #344a07;
@@ -162,21 +162,21 @@ ul.pagination li.current a, ul.pagination li:hover a, ul.pagination li a:focus {
 }
 ul.pagination li.unavailable a {
   cursor: default;
-  color: #999;
+  color: #344a07;
 }
 .form-field.error input, input.input-text.red {
-  border-color: #cf0000;
+  border-color: #c21919;
   background-color: rgba(255, 0, 0, 0.15);
 }
 .form-field.error label, label.red {
-  color: #cf0000;
+  color: #c21919;
 }
 .form-field.error small, small.error {
   margin-top: -6px;
   display: block;
   margin-bottom: 9px;
   font-size: 11px;
-  color: #cf0000;
+  color: #c21919;
   width: 254px;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -184,10 +184,10 @@ ul.pagination li.unavailable a {
 }
 form.nice div.form-field.error small, form.nice small.error {
   padding: 6px 4px;
-  border: solid 0 #cf0000;
+  border: solid 0 #c21919;
   border-width: 0 1px 1px 1px;
   margin-top: -10px;
-  background: #cf0000;
+  background: #c21919;
   color: #fff;
   font-size: 12px;
   font-weight: bold;
@@ -200,7 +200,7 @@ form.nice div.form-field.error small, form.nice small.error {
 }
 div.alert-box {
   display: block;
-  background-color: #e9e9e9;
+  background-color: #c9c9c9;
   padding: 6px 7px;
   font-weight: bold;
   font-size: 13px;
@@ -213,7 +213,7 @@ div.alert-box {
   position: relative;
 }
 .alert-box.success {
-  background-color: #5b8737;
+  background-color: #478026;
   color: #fff;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
 }
@@ -223,21 +223,21 @@ div.alert-box {
   text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
 }
 .alert-box.error {
-  background-color: #e91c21;
+  background-color: #c21919;
   color: #fff;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
 }
 .blue.label {
-  background-color: #00a6fc;
+  background-color: #3e93bd;
 }
 .red.label {
-  background-color: #e91c21;
+  background-color: #c21919;
 }
 .green.label {
-  background-color: #5b8737;
+  background-color: #478026;
 }
 .white.label {
-  background-color: #e9e9e9;
+  background-color: #c9c9c9;
   color: #333;
 }
 .black.label {

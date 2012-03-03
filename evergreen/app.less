@@ -162,9 +162,9 @@ div.panel
 .black.button:hover, .black.button:focus	{ background-color: darken(@blackButton, 10%); }
 .green.button:hover, .green.button:focus	{ background-color: darken(@greenButton, 10%); }	
 
-.nice.blue.button		{ border: 1px solid darken(@blueButton, 5%); }
-.nice.red.button		{ border: 1px solid darken(@redButton, 5%); }
-.nice.white.button		{ border: 1px solid darken(@whiteButton, 5%); text-shadow: none !important; }
+.nice.blue.button		{ border: 1px solid darken(@blueButton, 10%); }
+.nice.red.button		{ border: 1px solid darken(@redButton, 10%); }
+.nice.white.button		{ border: 1px solid darken(@whiteButton, 20%); text-shadow: none !important; }
 .nice.black.button		{ border: 1px solid darken(@blackButton, 10%); }
 .nice.green.button		{ border: 1px solid darken(@greenButton, 10%); }
 
@@ -185,7 +185,7 @@ dl.sub-nav dt
 
 ul.pagination li a { display: block; padding: 6px 7px 4px; color: @paginationColor; }
 ul.pagination li.current a, ul.pagination li:hover a, ul.pagination li a:focus { border-bottom: solid 2px @paginationBorderColor; color: @paginationFocusColor; }
-ul.pagination li.unavailable a { cursor: default; color: #999; }
+ul.pagination li.unavailable a { cursor: default; color: @paginationUnavailableColor; }
 
 // :: Form;
 
