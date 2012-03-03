@@ -1,16 +1,19 @@
 /* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
 @import url(http://fonts.googleapis.com/css?family=Signika+Negative:600);
+
+@import url(http://fonts.googleapis.com/css?family=Gudea:400);
 body {
   background: #7cb84b;
+  font-family: "Gudea", "Helvetica Neue", "HelveticaNeue", Helvetica, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #29230f;
 }
 a {
-  color: #d9eacb;
+  color: #ededed;
 }
 a:hover {
-  color: #cce3b9;
+  color: #e0e0e0;
 }
 header {
   padding: 3em 0px 3em 0px;
@@ -21,6 +24,9 @@ nav a {
 }
 nav a:hover {
   color: none;
+}
+abbr, acronym {
+  border-bottom: 1px solid #ededed;
 }
 h1 {
   font-size: 3em;
@@ -56,35 +62,38 @@ hr {
   border-top: 1px solid #70a742;
 }
 .bottom-border {
-  border-bottom: 4px solid none;
+  border-bottom: 4px solid #29230f;
 }
 .top-nav {
-  background: none;
+  background: #2d4205;
   height: 2.5em;
   line-height: 2.5em;
 }
 a.logo {
-  color: none;
+  color: #ffd454;
   font-size: 1.4em;
 }
 a.logo:hover {
-  color: none;
+  color: #ffd454;
 }
 .nav-bar {
-  background-color: none;
-  border-color: none;
+  background-color: #2d4205;
+  border-color: #29230f;
+}
+.nav-bar > li {
+  border-right: 1px solid #29230f;
 }
 .nav-bar > li > a {
-  color: none;
+  color: #ededed;
 }
 .nav-bar > li.has-flyout > a.flyout-toggle span {
-  border-top: 4px solid none;
+  border-top: 4px solid #e6f2dd;
 }
 div.panel {
   background: #efefef;
-  background: -moz-linear-gradient(top, #f7f7f7 0%, #f0f0f0 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7f7f7), color-stop(100%, #f0f0f0));
-  background: -o-linear-gradient(top, #f7f7f7 0%, #f0f0f0 100%);
+  background: -moz-linear-gradient(top, #72ab43 0%, #6ba03f 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #72ab43), color-stop(100%, #6ba03f));
+  background: -o-linear-gradient(top, #72ab43 0%, #6ba03f 100%);
 }
 .blue.button {
   background-color: #00a6fc;
@@ -135,9 +144,12 @@ div.panel {
   border: 1px solid #436328;
 }
 dl.sub-nav dd.active a {
-  background: none;
+  background: #2d4205;
   color: #fff;
   padding: 3px 9px;
+}
+dl.sub-nav dt {
+  color: #2d4205;
 }
 ul.pagination li a {
   display: block;

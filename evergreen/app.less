@@ -1,5 +1,6 @@
 //simpless:!minify
 @import url(http://fonts.googleapis.com/css?family=Signika+Negative:600);
+@import url(http://fonts.googleapis.com/css?family=Gudea:400);
 
 @import 'variables.less';
 
@@ -8,6 +9,7 @@
 body 
 {
 	background: @backgroundColor;
+	font-family: "Gudea", "Helvetica Neue", "HelveticaNeue", Helvetica, sans-serif;
 	font-size: @baseFontSize;
 	line-height: @baseLineHeight;
 	color: @textColor;
@@ -37,6 +39,11 @@ nav a
 nav a:hover
 {
 	color: @topNavLinkColor;
+}
+
+abbr, acronym 
+{
+	border-bottom: 1px solid @abbrBorderColor;
 }
 
 // TYPOGRAPHY
@@ -115,6 +122,11 @@ a.logo:hover
 	border-color: @topNavBorderColor;
 }
 
+.nav-bar > li 
+{
+	border-right: 1px solid @topNavBorderColor;
+}
+
 .nav-bar > li > a
 {
 	color: @navBarLinkColor;
@@ -124,6 +136,7 @@ a.logo:hover
 {
 	border-top: 4px solid @navBarSpanColor;
 }
+
 
 // :: Panel
 
@@ -157,10 +170,16 @@ div.panel
 
 // :: Sub Nav;
 
-dl.sub-nav dd.active a {
+dl.sub-nav dd.active a 
+{
     background: @subNavBackgroundColor;
     color: #fff;
     padding: 3px 9px;
+}
+
+dl.sub-nav dt 
+{
+	color: @subNavDtColor;
 }
 
 // :: Pagination;
