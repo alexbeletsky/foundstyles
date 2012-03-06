@@ -1,0 +1,296 @@
+//simpless:!minify
+@import 'variables.less';
+
+// COMMON
+
+body 
+{
+	background: @backgroundColor;
+	font-size: @baseFontSize;
+	line-height: @baseLineHeight;
+	color: @textColor;
+}
+
+a
+{
+	color: @linkColor;
+}
+
+a:hover
+{
+	color: @linkHoverColor;
+}
+
+header
+{
+	padding: 3em 0px 3em 0px;
+}
+
+nav a
+{
+	margin-right: 0.5em;
+	color: @topNavLinkColor;
+}
+
+nav a:hover
+{
+	color: @topNavLinkColor;
+}
+
+abbr, acronym 
+{
+	border-bottom: 1px solid @abbrBorderColor;
+}
+
+// TYPOGRAPHY
+
+h1
+{
+	font-size: 3em;
+}
+
+h2
+{
+	font-size: 2.5em;
+}
+
+h3
+{
+	font-size: 2em;
+}
+
+h4
+{
+	font-size: 1.4em;
+}
+
+h5
+{
+	font-size: 1.2em;
+}
+
+h6
+{
+	font-size: 1em;
+}
+
+h1, h2, h3, h4, h5, h6, .top-nav, .nav-bar, .sub-nav
+{
+    font-family: 'PT Sans', sans-serif;
+    color: @headingColor;
+}
+
+hr
+{
+	border-top: 1px solid @hrColor;
+}
+
+// UI
+
+.bottom-border
+{
+	border-bottom: 4px solid @topNavBorderColor;
+}
+
+.top-nav
+{
+	background: @topNavBackgroundColor;
+	height: 2.5em;
+	line-height: 2.5em;
+}
+
+a.logo 
+{
+	color: @logoColor;
+	font-size: 1.4em;
+}
+
+a.logo:hover
+{
+	color: @logoColor;
+}
+
+// :: Nav Bar;
+
+.nav-bar
+{
+	background-color: @topNavBackgroundColor;
+	border-color: @topNavBorderColor;
+}
+
+.nav-bar > li 
+{
+	border-right: 1px solid @topNavBorderColor;
+}
+
+.nav-bar > li > a
+{
+	color: @navBarLinkColor;
+}
+
+.nav-bar > li.has-flyout > a.flyout-toggle span 
+{
+	border-top: 4px solid @navBarSpanColor;
+}
+
+
+// :: Panel
+
+div.panel 
+{
+	background: #efefef;
+	background: -moz-linear-gradient(top, @panelGradientStart 0%, @panelGradientFinish 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@panelGradientStart), color-stop(100%,@panelGradientFinish));
+	background: -o-linear-gradient(top, @panelGradientStart 0%,@panelGradientFinish 100%);
+}
+
+// :: Buttons;
+
+.blue.button			{ background-color: @blueButton; }
+.red.button				{ background-color: @redButton; }
+.white.button			{ background-color: @whiteButton; color: #333; }
+.black.button			{ background-color: @blackButton; }
+.green.button			{ background-color: @greenButton; }
+
+.blue.button:hover, .blue.button:focus		{ background-color: darken(@blueButton, 10%); }
+.red.button:hover, .red.button:focus 		{ background-color: darken(@redButton, 10%); }
+.white.button:hover, .white.button:focus	{ background-color: darken(@whiteButton, 10%); color: #333; }
+.black.button:hover, .black.button:focus	{ background-color: darken(@blackButton, 10%); }
+.green.button:hover, .green.button:focus	{ background-color: darken(@greenButton, 10%); }	
+
+.nice.blue.button		{ border: 1px solid darken(@blueButton, 10%); }
+.nice.red.button		{ border: 1px solid darken(@redButton, 10%); }
+.nice.white.button		{ border: 1px solid darken(@whiteButton, 20%); text-shadow: none !important; }
+.nice.black.button		{ border: 1px solid darken(@blackButton, 10%); }
+.nice.green.button		{ border: 1px solid darken(@greenButton, 10%); }
+
+// :: Sub Nav;
+dl.sub-nav dd.active a 
+{
+    background: @subNavBackgroundColor;
+    color: @subNavColor;
+    padding: 3px 9px;
+}
+
+dl.sub-nav dt 
+{
+	color: @subNavDtColor;
+}
+
+// :: Pagination;
+
+ul.pagination li a { display: block; padding: 6px 7px 4px; color: @paginationColor; }
+ul.pagination li.current a, ul.pagination li:hover a, ul.pagination li a:focus { border-bottom: solid 2px @paginationBorderColor; color: @paginationFocusColor; }
+ul.pagination li.unavailable a { cursor: default; color: @paginationUnavailableColor; }
+
+// :: Form;
+
+.form-field.error input, input.input-text.red { border-color: @red; background-color: rgba(255,0,0,0.15); }
+.form-field.error label, label.red { color: @red; }
+.form-field.error small, small.error { margin-top: -6px; display: block; margin-bottom: 9px; font-size: 11px; color: @red; width: 254px; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
+
+form.nice div.form-field.error small, form.nice small.error { padding: 6px 4px; border: solid 0 @red; border-width: 0 1px 1px 1px; margin-top: -10px; background: @red; color: #fff; font-size: 12px; font-weight: bold; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; -webkit-border-bottom-left-radius: 2px; -webkit-border-bottom-right-radius: 2px; -moz-border-radius-bottomleft: 2px; -moz-border-radius-bottomright: 2px; }
+
+// :: Alerts;
+
+div.alert-box { display: block; background-color: @whiteButton; padding: 6px 7px; font-weight: bold; font-size: 13px; border: 1px solid rgba(0,0,0,0.1); margin-bottom: 12px; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; text-shadow: 0 1px rgba(255,255,255,0.9); position: relative; }
+	.alert-box.success { background-color: @greenButton; color: #fff; text-shadow: 0 -1px rgba(0,0,0,0.3); }
+	.alert-box.warning { background-color: @orange; color: #fff; text-shadow: 0 -1px rgba(0,0,0,0.3); }
+	.alert-box.error { background-color: @redButton; color: #fff; text-shadow: 0 -1px rgba(0,0,0,0.3); }
+
+// :: Labels;
+
+.blue.label				{ background-color: @blueButton; }
+.red.label				{ background-color: @redButton; }
+.green.label			{ background-color: @greenButton; }
+.white.label			{ background-color: @whiteButton; color: #333; }
+.black.label			{ background-color: @blackButton; }
+
+// :: BreadCrumbs;
+
+ul.breadcrumbs { display: block; background: @breadBackground; padding: 7px 10px; border: 1px solid @breadBorder; border-radius: 2px; overflow: hidden; }
+ul.breadcrumbs li:first-child a, ul.breadcrumbs li:first-child span { padding-left: 0; }
+ul.breadcrumbs li:before { content: "/"; color: @breadSeparatorColor; }
+ul.breadcrumbs li.current a { cursor: default; color: @breadCurrentColor; }
+ul.breadcrumbs li.unavailable a { color: @breadUnavailableColor; }
+ul.breadcrumbs li.unavailable:hover a, ul.pagination li.unavailable a:focus { text-decoration: none; color: @breadUnavailableFocusColor; cursor: default; }// :: Tables;
+
+table { background: @tableBackground; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; margin: 0 0 18px; border: 1px solid @tableBorder;  }
+
+table thead, table tfoot { background: @tableHeaderFooterBackground; }
+table thead tr th,
+table tfoot tr th,
+table tbody tr td,
+table tr td,
+table tfoot tr td { font-size: 12px; line-height: 18px; text-align: left; }
+table thead tr th,
+table tfoot tr td { padding: 8px 10px 9px; font-size: 14px; font-weight: bold; color: @tableFooterHeaderTrTdColor; }
+
+table thead tr th:first-child, table tfoot tr td:first-child { border-left: none; }
+table thead tr th:last-child, table tfoot tr td:last-child { border-right: none; }
+table tbody tr.even,
+table tbody tr.alt { background: @tableAltColor; }
+table tbody tr:nth-child(even) { background: @tableAltColor; }
+table tbody tr td { color: @tableTrTdColor; padding: 9px 10px; vertical-align: top; border: none; }
+
+// BLOG
+
+.post
+{
+	display: block;
+	margin-bottom: 1.7em;
+}
+
+.post p
+{
+	font-size: @baseFontSize + 1;
+	line-height: @baseLineHeight + 5;
+}
+
+.post-header
+{
+	margin-bottom: 1em;
+}
+
+.post-header p.date
+{
+	font-size: 0.85em;
+	font-style: italic;
+	color: @lightTextColor;
+}
+
+.comments
+{
+	float: right;
+}
+
+.comments a
+{
+	text-decoration: underline;
+}
+
+// FOOTER
+
+.footer
+{
+	margin-top: 4em;
+	padding: 3em 0px; 
+
+	background-color: @footerBackground;
+  	border-top: solid 1px @footerBorderColor;
+}
+
+footer p
+{
+	color: @footerColor;
+}
+
+footer a
+{
+	color: @footerLinkColor;
+}
+
+footer a:hover
+{
+	color: @footerLinkColor;
+}	
