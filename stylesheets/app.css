@@ -96,9 +96,9 @@
 
 .style
 {
-	display: block;
+	width: 295px;
 	height: 300px;
-	padding: 4px;
+	padding: 5px;
 	background-color: #E3E3E3;
 	border: 1px solid #DDD;
 	-webkit-border-radius: 4px;
@@ -111,9 +111,16 @@
 
 .style img
 {
-	width: 290px;
-	height: 200px;
+	width: 295px;
+	height: 180px;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
+}
+
+.toolbar
+{
+	text-align: right;
+	display: inline-block;
+ 	*display: inline;
 }
