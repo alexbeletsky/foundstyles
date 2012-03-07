@@ -91,8 +91,15 @@ jQuery(document).ready(function ($) {
   	{ user: 'alexanderbeletsky', repo: 'foundstyles', branch: 'master', last: 3, limitMessageTo: 45, avatarSize: 16 });
 
 
-	/* DISABLED BUTTONS ------------- */
-	/* Gives elements with a class of 'disabled' a return: false; */
-  
+  $('.preview').live('click', function () {
+  	var href = $(this).attr('href');
+  	gaLogEvent('Preview', href);
+  });
+
+  $('.download').live('click', function () {
+  	var href = $(this).attr('href');
+  	gaLogEvent('Download', href);
+  });
+
 
 });
