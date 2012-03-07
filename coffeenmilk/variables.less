@@ -2,7 +2,7 @@
 
 @blue:                  	#2a85e8;
 @green:                 	#2e8f34;
-@red:                   	#cf0000;
+@red:                   	#ed6f6f;
 @yellow:                	#f7b42c;
 @orange:                	#dd5600;
 @pink:                  	#f49ac1;
@@ -11,70 +11,74 @@
 @grey:						#eeeeee;
 @darkGrey:					#8f8f8f;
 @black:						#141414;
+@brown:						#7d4e2a;
+@pink:						#ed6f6f;
 
 // BUTTONS
 
 @whiteButton:				#e9e9e9;
-@blueButton:				#00a6fc;
-@redButton:					#e91c21;
-@greenButton:				#5b8737;
-@blackButton:				#141414;
+@blueButton:				#54b9eb;
+@redButton:					#ed6f6f;
+@greenButton:				#88b564;
+@blackButton:				#363636;
 
 // TYPOGRAPHY
 
 @baseFontSize:          	14px;
-@baseLineHeight:        	18px;
-@textColor:             	darken(@backgroundColor, 80%);
-@headingColor:				@black;
+@baseLineHeight:        	17px;
+@textColor:             	@brown;
+@headingColor:				#4f281b;
 @hrColor:					darken(@backgroundColor, 5%);
-@lightTextColor:			lighten(@textColor, 40%);
+@lightTextColor:			lighten(@textColor, 10%);
+@darkTextColor:				darken(@textColor, 10%);
 @parFontSize:				@baseFontSize;
 
 // ELEMENTS
 
-@backgroundColor: 			@white;
+@backgroundColor: 			#ccae7a;
 
-@navBarLinkColor:			none;
-@navBarSpanColor:			none;
+@navBarLinkColor:			@linkColor;
+@navBarSpanColor:			@backgroundColor;
 
-@linkColor:					@blue;
-@linkHoverColor:			darken(@linkColor, 5%);
+@linkColor:					#fffaed;
+@linkHoverColor:			darken(@linkColor, 15%);
 
-@topNavLinkColor:			none;
-@topNavBackgroundColor: 	none;
-@topNavBorderColor:			none;
+@topNavLinkColor:			#ffecbf;
+@topNavBackgroundColor: 	#4f281b;
+@topNavBorderColor:			#7d4e2a;
 
-@footerBackground:			none;
-@footerBorderColor:			none;
-@footerColor:				none;
+@footerBackground:			@topNavBackgroundColor;
+@footerBorderColor:			#ffe6a8;
+@footerColor:				#ffe6a8;
 @footerLinkColor:			none;
 
 @logoColor:					none;
 
-@panelGradientStart:		darken(@white, 3%);
-@panelGradientFinish:		darken(@white, 6%);
+@panelGradientStart:		darken(@backgroundColor, 9%);
+@panelGradientFinish:		darken(@backgroundColor, 15%);
 
-@subNavBackgroundColor:		none;
-@subNavDtColor:				none;
+@subNavBackgroundColor:		@pink;
+@subNavDtColor:				@headingColor;
 @subNavColor:				none;
 
-@paginationColor:			@lightTextColor;
-@paginationBorderColor:		@blue;
-@paginationFocusColor:		@black;
-@paginationUnavailableColor:	@grey;
+@paginationColor:				@darkTextColor;
+@paginationBorderColor:			@pink;
+@paginationFocusColor:			@black;
+@paginationUnavailableColor:	@lightTextColor;
 
-@abbrBorderColor:			none;
+@abbrBorderColor:			#fff3d6;
 
-@breadBackground:			#f4f4f4;
-@breadBorder:				#ddd;
-@breadSeparatorColor:		#ddd;
-@breadCurrentColor:			#333;
-@breadUnavailableColor:		#999;
+@breadBackground:			#f2ebbf;
+@breadLinkColor:			@headingColor;
+@breadBorder:				#a18960;
+@breadSeparatorColor:		#a18960;
+@breadCurrentColor:			@pink;
+@breadUnavailableColor:		lighten(@breadLinkColor, 10%);
 @breadUnavailableFocusColor:#999;
 
-@tableBackground:				#fff;
-@tableBorder:					#ddd;
-@tableHeaderFooterBackground:	#f5f5f5;
+@tableBackground:				#ffecbf;
+@tableBorder:					#a18960;
+@tableHeaderFooterBackground:	#4f281b;
 @tableAltColor:					#f9f9f9;
-@tableFooterHeaderTrTdColor:	#222;
-@tableTrTdColor:				#333;
+@tableFooterHeaderTrTdColor:	#ffecbf;
+@tableTrTdColor:				@textColor;

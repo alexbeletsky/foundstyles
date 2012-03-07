@@ -1,4 +1,7 @@
 //simpless:!minify
+@import url(http://fonts.googleapis.com/css?family=Bitter:700);
+@import url(http://fonts.googleapis.com/css?family=Cantata+One:400);
+
 @import 'variables.less';
 
 // COMMON
@@ -6,6 +9,7 @@
 body 
 {
 	background: @backgroundColor;
+	font-family: "Glegoo", "Helvetica Neue", "HelveticaNeue", Helvetica, sans-serif;
 	font-size: @baseFontSize;
 	line-height: @baseLineHeight;
 	color: @textColor;
@@ -76,7 +80,7 @@ h6
 
 h1, h2, h3, h4, h5, h6, .top-nav, .nav-bar, .sub-nav
 {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Bitter', sans-serif;
     color: @headingColor;
 }
 
@@ -133,12 +137,11 @@ a.logo:hover
 	border-top: 4px solid @navBarSpanColor;
 }
 
-
 // :: Panel
 
 div.panel 
 {
-	background: #efefef;
+	background: @panelGradientStart;
 	background: -moz-linear-gradient(top, @panelGradientStart 0%, @panelGradientFinish 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@panelGradientStart), color-stop(100%,@panelGradientFinish));
 	background: -o-linear-gradient(top, @panelGradientStart 0%,@panelGradientFinish 100%);
@@ -209,6 +212,7 @@ div.alert-box { display: block; background-color: @whiteButton; padding: 6px 7px
 // :: BreadCrumbs;
 
 ul.breadcrumbs { display: block; background: @breadBackground; padding: 7px 10px; border: 1px solid @breadBorder; border-radius: 2px; overflow: hidden; }
+ul.breadcrumbs a { color: @breadLinkColor; }
 ul.breadcrumbs li:first-child a, ul.breadcrumbs li:first-child span { padding-left: 0; }
 ul.breadcrumbs li:before { content: "/"; color: @breadSeparatorColor; }
 ul.breadcrumbs li.current a { cursor: default; color: @breadCurrentColor; }
